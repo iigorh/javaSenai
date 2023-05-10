@@ -1,0 +1,10 @@
+INDEX VERSION 1.132+E:\arquivos_java_vespertino\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3940714766.index
+51068769.index
+3412880106.index
+347888419.index
+3359144335.index
+1656392770.index
+1176209769.index
+1470428129.index

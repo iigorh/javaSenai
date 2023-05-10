@@ -1,0 +1,20 @@
+package principal;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		// * 1- Faça um programa que mostre os índices de um array de 100 posições;
+
+		int[] numeros = new int [100];
+		
+		for (int i = 0; i < numeros.length; i++) {
+			numeros[i] = i;
+			System.out.println("Indices do array: "+ i);
+		}
+	}
+
+
+		
+	
+}

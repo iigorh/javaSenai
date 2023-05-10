@@ -1,0 +1,66 @@
+package principal;
+
+public class AulaVetorMatriz {
+
+	public static void main(String[] args) {
+		/*
+		int [] numero = new int [5];
+		numero [0] = 100;
+		numero [1] = 20;
+		numero [2] = 15;
+		numero [3] = 55;
+		numero [4] = 66;
+		//numero [299] = 15;
+		System.out.println(numero[0] +" "+ numero[3]);
+		
+		*/
+		/*
+		int[] numeros = {1, 2, 3, 10, 50, 60, 80};
+		
+		System.out.println(numeros[3]);
+		System.out.println(numeros.length);
+		
+		for(int contador = 0; contador <numeros.length; contador++) {
+			System.out.println(numeros[contador]);
+		}
+		
+		System.out.println("Foreach");
+		for (int indice : numeros) {
+			System.out.println(indice);
+		}*/
+		
+		
+		
+		// primeiro colchetes quantidade de linhas e segundo a quantidade de colunas
+	
+		int[][] mult = new int [3][3];
+		int contador = 0;
+		for(int i = 0; i < mult.length; i++) {
+			for(int j = 0; j < mult.length; j++) {
+				mult[i][j] = contador;
+				System.out.println(mult[i][j] + "\t");
+				contador++;
+			}
+			System.out.println();
+		
+		
+		/*
+		int[] [] matriz = new int [3][3];
+		matriz [0][0] = 1;
+		matriz [0][1] = 2;
+		matriz [0][2] = 3;
+		matriz [1][0] = 4;
+		matriz [1][1] = 5;
+		matriz [1][2] = 6;
+		matriz [2][0] = 7;
+		matriz [2][1] = 8;
+		matriz [2][2] = 9;
+		
+		for(int i = 0; i < matriz.length)
+		
+		*/
+		
+		
+	}
+
+}

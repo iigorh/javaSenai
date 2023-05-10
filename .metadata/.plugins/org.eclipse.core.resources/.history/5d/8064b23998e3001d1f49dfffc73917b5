@@ -1,0 +1,30 @@
+package principal;
+
+import java.util.Scanner;
+
+public class ProgramMedia {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Informe a nota do 1º Bimestre: ");
+		double n1 = sc.nextDouble();
+		
+		System.out.println("Informe a nota do 2º Bimestre: ");
+		double n2 = sc.nextDouble();
+		
+		System.out.println("Informe a nota do 3º Bimestre: ");
+		double n3 = sc.nextDouble();
+		
+		System.out.println("Informe a nota do 4º Bimestre: ");
+		double n4 = sc.nextDouble();
+		
+		double resultado = n1+n2+n3+n4 %4;
+		
+		
+		System.out.println("A média dos 4 bimestre é igual a: " + resultado);
+		
+
+	}
+
+}

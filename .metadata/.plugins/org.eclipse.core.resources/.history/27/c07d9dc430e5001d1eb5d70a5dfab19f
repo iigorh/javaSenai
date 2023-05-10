@@ -1,0 +1,44 @@
+package principal;
+
+import java.util.Scanner;
+
+public class ProgramNotas {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Informe a nota do 1º Bimestre: ");
+		double n1 = sc.nextDouble();
+
+		System.out.println("Informe a nota do 2º Bimestre: ");
+		double n2 = sc.nextDouble();
+
+		System.out.println("Informe a nota do 3º Bimestre: ");
+		double n3 = sc.nextDouble();
+
+		System.out.println("Informe a nota do 4º Bimestre: ");
+		double n4 = sc.nextDouble();
+
+		double resultado = (n1 + n2 + n3 + n4) / 4;
+
+		if (resultado >= 5 && resultado <= 6 ) {
+			System.out.printf("A sua média dos 4 bimestres é de: %.2f pontos e você está REPROVADO.", resultado);
+		}
+		else if (resultado >= 6 && resultado <= 7 ) {
+			System.out.printf("A sua média dos 4 bimestres é de: %.2f pontos e você está de RECUPERAÇÃO.", resultado );
+		}
+		else if (resultado > 7) {
+			System.out.printf("A sua média dos 4 bimestres é de: %.2f pontos e você está APROVADO", resultado);
+		}
+		else if (resultado == 10) {
+			System.out.printf("A sua médis dos 4 bimestre é de: %.2f pontos e você foi APROVADO com honras.", resultado);
+		}
+		else {System.out.printf("Não foi possível definir a sua nota"); 
+		}
+		sc.close();
+
+		
+
+	}
+
+}

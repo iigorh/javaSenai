@@ -1,0 +1,36 @@
+package principal;
+
+import java.text.NumberFormat; //permitirá a formatação do número adequadamente
+import java.util.Locale; // permitirá a configuração da localidade
+import java.util.Scanner;
+
+public class ProgramSalHor {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Informe quanto você recebe por hora trabalhada: ");
+		float salarioHora = sc.nextFloat();
+		
+		System.out.println("Informe quantas horas você trabalhou neste mês: ");
+		int horaMes = sc.nextInt();
+		
+		float resultado = salarioHora*horaMes;
+		
+		//"criar" objeto para classe que entenda a moeda br
+		
+		Locale localBrasil = new Locale("pt", "BR");
+		
+		//para formatar para moeda brasileira
+		
+		String brasil = NumberFormat.getCurrencyInstance(localBrasil).format(resultado);
+		
+		sc.close();
+		
+		
+		//System.out.printf("Este é o seu salário no referido mês: R$%5f", resultado);
+		System.out.println("Este mês você receberá o valor bruto de " + brasil + " pelas horas trabalhadas");
+
+	}
+
+}

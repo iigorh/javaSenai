@@ -1,0 +1,16 @@
+package entities;
+
+public class DadosCliente {
+	public String nome;
+	public String cpf;
+	public String email;
+	public String dnasc;
+	public String endereco;
+	public String telefone;
+	
+	@Override
+	public String toString() {
+		
+		return "\n " + nome + "\n " + cpf + "\n " + dnasc + "\n " + email + "\n " + telefone + "\n " + endereco + " ";
+	}
+}

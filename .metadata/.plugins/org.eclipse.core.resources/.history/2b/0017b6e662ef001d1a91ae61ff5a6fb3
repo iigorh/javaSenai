@@ -1,0 +1,10 @@
+package principal;
+
+public class entities {
+	public String nome;
+	public String cpf;
+	public String email;
+	public String dnasc;
+	public String endereco;
+	public String telefone;
+}

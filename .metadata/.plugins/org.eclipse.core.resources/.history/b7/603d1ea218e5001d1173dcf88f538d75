@@ -1,0 +1,24 @@
+package principal;
+
+import java.util.Scanner;
+
+public class AnoB {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+        
+        System.out.println("Informe um ano: ");
+        int ano = sc.nextInt();       
+       
+        // se o ano for maior que 400
+        if(ano % 400 == 0){
+            System.out.println(ano + " é bissexto.");
+        // se o ano for menor que 400
+        } else if((ano % 4 == 0) && (ano % 100 != 0)){
+            System.out.println(ano + " é bissexto.");
+        } else{
+            System.out.println(ano + " não é bissexto");
+        }
+	}
+}

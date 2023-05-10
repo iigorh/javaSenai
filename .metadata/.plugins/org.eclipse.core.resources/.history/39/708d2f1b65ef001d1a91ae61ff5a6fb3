@@ -1,0 +1,56 @@
+package entities;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		DadosCliente cliente1 = new DadosCliente();
+		DadosCliente cliente2 = new DadosCliente();
+
+		System.out.println("CADASTRO DE CLIENTE: ");
+		System.out.println("Entre com o nome do cliente ");
+		cliente1.nome = sc.nextLine();
+
+		System.out.println("Entre com o CPF do cliente: ");
+		cliente1.cpf = sc.nextLine();
+
+		System.out.println("Entre com a data de nascimento do cliente: ");
+		cliente1.dnasc = sc.nextLine();
+
+		System.out.println("Entre com o e-mail do cliente: ");
+		cliente1.email = sc.nextLine();
+		
+		System.out.println("Entre com o telefone do cliente (XX)9xxxx-xxxx) ");
+		cliente1.telefone = sc.nextLine();
+		
+		System.out.println("Entre com o endereço do cliente: ");
+		cliente1.endereco = sc.nextLine();
+		
+		/*
+		System.out.println("SEGUNDO CARRO");
+
+		System.out.println("Qual o modelo do carro? ");
+		carro2.modelo = sc.nextLine();
+		System.out.println("Entre com a cor do carro: ");
+		carro2.cor = sc.nextLine();
+
+		System.out.println("Entre com a placa do carro: ");
+		carro2.placa = sc.nextLine();
+
+		System.out.println("Entre com o tipo de câmbio do carro: \n");
+		carro2.cambio = sc.nextLine();
+		 */
+
+		System.out.println("Cliente cadastrado com sucesso! \n");
+		System.out.println("CARACTERÍSTICAS DO 1º CARRO: \n" + cliente1);
+
+		
+
+		sc.close();
+
+	}
+
+}

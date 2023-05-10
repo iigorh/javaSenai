@@ -1,0 +1,24 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Conversor {
+
+	public static void main(String[] args) {
+		//Faça um programa que recebe um valor em real e converta para dólares na cotação atual, faça o inverso também;
+		Scanner sc = new Scanner(System.in);
+		
+		double d = 5.00;
+		System.out.println("Digite o valor em real: R$");
+		double r = sc.nextDouble();
+		conversor(d, r);
+		
+
+
+	}
+	static void conversor(double d, double r) {
+		System.out.println("O valor em dólares é de: US$" + (r * 5));
+		
+	}
+
+}

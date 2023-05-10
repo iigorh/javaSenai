@@ -1,0 +1,24 @@
+package principal;
+
+import java.util.Scanner;
+
+public class ProgramSalHor {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Informe quanto você recebe por hora trabalhada: ");
+		float salarioHora = sc.nextFloat();
+		
+		System.out.println("Informe quantas horas você trabalhou neste mês: ");
+		int horaMes = sc.nextInt();
+		
+		float resultado = salarioHora*horaMes;
+		
+		sc.close();
+		
+		System.out.println("Este é o seu salário no referido mês: " + resultado);
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package principal;
+
+public class Program {
+
+	public static void main(String[] args) {
+		//declaração de constante
+		final double PI = 3.14151617;
+		// PI = 5.13324; não é possível alterar o valor
+		
+		System.out.println(Math.pow(3, 3));
+				
+
+	}
+
+}

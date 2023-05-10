@@ -1,0 +1,22 @@
+package principal;
+
+import java.util.Scanner;
+
+public class TempCtoF {
+
+	public static void main(String[] args) {
+			Scanner sc = new Scanner (System.in);
+			
+			System.out.println("Informe a temperatura em graus Celcius: ");
+			double celsius = sc.nextDouble();
+			
+			
+			double resultado = ((celsius*9)/5)+32  ;
+			
+			
+			sc.close();
+			System.out.println("A temperatura em Farenheit é de: " + resultado + " graus");
+
+	}
+
+}

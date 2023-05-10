@@ -1,0 +1,32 @@
+package principal;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ProgramSalHor {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Informe quanto você recebe por hora trabalhada: ");
+		float salarioHora = sc.nextFloat();
+		
+		System.out.println("Informe quantas horas você trabalhou neste mês: ");
+		int horaMes = sc.nextInt();
+		
+		float resultado = salarioHora*horaMes;
+		
+		Locale localBrasil = new Locale("pt", "BR");
+		
+		String brasil = NumberFormat.getCurrencyInstance(localBrasil).format(resultado);
+		
+		sc.close();
+		
+		
+		//System.out.printf("Este é o seu salário no referido mês: R$%5f", resultado);
+		System.out.println("O resultado da soma dos dois números é: " + resultado + brasil);
+
+	}
+
+}

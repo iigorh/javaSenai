@@ -1,0 +1,41 @@
+package entities;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		DadosCliente cliente = new DadosCliente();
+		
+
+		System.out.println("CADASTRO DE CLIENTE: ");
+		System.out.println("Entre com o nome do cliente ");
+		cliente.nome = sc.nextLine();
+
+		System.out.println("Entre com o CPF do cliente: ");
+		cliente.cpf = sc.nextLine();
+
+		System.out.println("Entre com a data de nascimento do cliente: ");
+		cliente.dnasc = sc.nextInt();
+
+		System.out.println("Entre com o e-mail do cliente: ");
+		cliente.email = sc.nextLine();
+		
+		System.out.println("Entre com o telefone do cliente (XX)9xxxx-xxxx) ");
+		cliente.telefone = sc.nextLine();
+		
+		System.out.println("Entre com o endereço do cliente: ");
+		cliente.endereco = sc.nextLine();
+
+		System.out.println("Cliente cadastrado com sucesso! \n");
+		System.out.println("DADOS DO CLIENTE CADASTRADO: \n" + cliente);
+
+		
+
+		sc.close();
+
+	}
+
+}

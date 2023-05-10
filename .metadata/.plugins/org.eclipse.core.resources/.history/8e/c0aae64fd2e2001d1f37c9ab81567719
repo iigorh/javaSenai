@@ -1,0 +1,29 @@
+package principal;
+
+public class Variaveis {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*idade
+		 * int idade = 23;
+		double altura = 1.75;
+		String nome = "Igor Henrique";
+		char sexo = 'm';
+		System.out.print("meu nome é " + nome + 
+				", tenho " + idade + 
+				" anos de idade" + 
+				" e tenho " + altura +" de altura");
+		*/
+		
+		int n1 = 10;
+		int n2 = 20;
+		int resultado = n1 * n2;
+		System.out.println(resultado);
+		
+				
+		
+		
+	}
+
+}

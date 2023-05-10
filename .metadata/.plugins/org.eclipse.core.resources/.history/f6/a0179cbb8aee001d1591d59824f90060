@@ -1,0 +1,55 @@
+package principal;
+
+import java.util.Scanner;
+
+public class SalarioFunc {
+
+	public static void main(String[] args) {
+
+	
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Digite o salário do vendedor");
+		double salarioB = sc.nextDouble();
+
+		System.out.println("Digite a quantidade total de vendas no mês: ");
+		double vendasNoMes = sc.nextDouble();
+
+
+		calcSalarioLiq(salarioB, calcBonus(vendasNoMes));
+		
+		sc.close();
+		
+
+	}
+
+
+
+	static double calcBonus(double vendasNoMes) {
+			if (vendasNoMes > 20000) {
+				return vendasNoMes *0.05;
+		}	else if (vendasNoMes >= 15000 && vendasNoMes <= 20000) {
+				return vendasNoMes * 0.03;
+		}	else if (vendasNoMes >= 10000 && vendasNoMes <=15000) {
+				return vendasNoMes * 0.01;
+		}
+			return vendasNoMes;	
+		}
+
+	static void calcSalarioLiq(double salarioB, double vendas) {
+			double inss = salarioB*0.05;
+			double irpf = salarioB*0.11;
+			double salarioLiq = salarioB - inss - irpf;
+			System.out.printf("Salário Bruto =  R$%.2f", salarioB);
+			System.out.printf("\nDesconto INSS = -R$%.2f", inss);
+			System.out.printf("\nDesconto IRPF = -R$%.2f", irpf);
+			if(vendas < 10000) {
+				System.out.printf("\nSalário Liqu. =  R$%.2f",  salarioLiq);
+				System.out.printf("\nSalario liqu. =   R$%.2f \nComissão    =  +R$%.2f \nSalário Liquido total = R$$.2f", salarioLiq, vendas, (salarioLiq + vendas));
+			}else   System.out.printf("Salario liquido: R$%.2f", salarioLiq);
+					System.out.println("Você não atingiu o suficiente para receber um bônus, continue tentando para alcançar no futuro!");
+		}
+
+	 }		
+
+	

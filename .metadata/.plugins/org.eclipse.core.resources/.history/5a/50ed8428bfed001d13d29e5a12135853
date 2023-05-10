@@ -1,0 +1,16 @@
+package principal;
+
+public class Funcoes {
+
+	public static void main(String[] args) {
+	
+	mensagem();	
+		
+		
+	}
+	static void mensagem() {
+		System.out.println("Minha primeira função");
+	}
+	
+	
+}

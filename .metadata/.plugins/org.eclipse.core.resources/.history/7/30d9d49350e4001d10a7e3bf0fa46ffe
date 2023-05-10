@@ -1,0 +1,33 @@
+package principal;
+
+import java.util.Scanner;
+import java.text.NumberFormat;
+import java.util.Locale;
+
+
+
+public class Program {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner (System.in);
+		
+				
+		System.out.println("Informe um número: ");
+		int n1 = sc.nextInt();
+		
+		System.out.println("Informe outro número: ");
+		int n2 = sc.nextInt();
+		
+		int resultado = n1+n2;
+		
+		String eua = NumberFormat.getCurrencyInstance(Locale.US).format(resultado);
+		
+		
+		sc.close();
+		
+		System.out.println("O resultado da soma dos dois números é: " + resultado + eua);
+				
+
+	}
+
+}

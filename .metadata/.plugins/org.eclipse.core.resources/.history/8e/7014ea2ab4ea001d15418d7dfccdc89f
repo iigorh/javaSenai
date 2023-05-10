@@ -1,0 +1,29 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// *Faça um programa que leia 5 numeros e armazene em um array. Depois faça com que o programa pergunte ao usuário um número qualquer e diga se tem ou não no array
+		Scanner sc = new Scanner (System.in);
+		
+		int[] numeros = new int[5];
+		
+		for (int i = 0;i< 5; i++) {
+			System.out.println("Digite um número: ");
+			numeros[i] = sc.nextInt();
+		
+		
+			System.out.println("Escolha um número para verificação no array: ");
+			int numero = sc.nextInt();
+			
+			if(numero == numeros [i]) {
+				System.out.println("O número " + numero + "tem no array");
+			}
+			else {System.out.println("Não tem no array!");
+			}
+			}
+	}
+	}
+

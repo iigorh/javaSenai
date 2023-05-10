@@ -1,0 +1,11 @@
+package principal;
+
+public class SalarioFunc {
+
+	public static void main(String[] args) {
+		
+		double sB = 1,300.00; 
+		System.out.println(sB);
+	}
+
+}
