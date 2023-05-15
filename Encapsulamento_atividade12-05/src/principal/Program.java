@@ -12,7 +12,7 @@ public class Program {
 
 		
 		System.out.printf("\nO produto " + "'" + p1.getNomeProduto() + "'"
-				+ " está cadastrado no estoque!\nQuantidade do produto em estoque: " + p1.getQuantidade()
+				+ " está cadastrado no estoque!\n Categoria do produto: " + p1.getCategoria() + "\nQuantidade do produto em estoque: " + p1.getQuantidade()
 				+ " unidades" + "\nValor do estoque atualizado: R$%.2f", p1.getValorTotal());
 
 		System.out.println("\nDigite a quantidade a ser retirada do estoque: ");

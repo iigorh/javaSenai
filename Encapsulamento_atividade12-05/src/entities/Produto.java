@@ -2,7 +2,7 @@ package entities;
 
 public class Produto {
 	private String nomeProduto = "Garrafa";
-	private String categoria = "recipiente";
+	private String categoria = "Recipientes";
 	private int quantidade = 1000;
 	private double valorUnitario = 50;
 	private double valorTotal;
