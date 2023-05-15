@@ -1,10 +1,10 @@
 package entities;
 
 public class Produto {
-	private String nomeProduto;
-	private String categoria;
-	private int quantidade;
-	private double valorUnitario;
+	private String nomeProduto = "Garrafa";
+	private String categoria = "recipiente";
+	private int quantidade = 1000;
+	private double valorUnitario = 50;
 	private double valorTotal;
 	public String getNomeProduto() {
 		return nomeProduto;
@@ -34,10 +34,7 @@ public class Produto {
 		return quantidade * valorUnitario;
 	}
 	
-	public void entradaProduto(double quantidadeIn){
-		valorTotal += valorUnitario * quantidadeIn;
-		quantidade += quantidadeIn;
-	}
+	
 	public void saidaProduto(double quantidadeOut) {
 		if (quantidadeOut > quantidade){
 			System.out.println("Não há produtos sufientes em estoque!");
