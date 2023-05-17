@@ -24,12 +24,12 @@ public class Program {
 		
 		System.out.println(conta2);
 		conta2.depositar(sc.nextDouble());*/
-		
+		/*
 		
 		Conta conta = new Conta(4321, 1234, "igor");
 		
 		System.out.println(conta);
-		
+		*/
 		/*System.out.println("Entre com o número da conta: ");
 		conta.setNumeroDaConta(sc.nextInt()); 
 		
