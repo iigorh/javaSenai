@@ -13,7 +13,12 @@ public class ContaCorrente extends Conta{
 		super(titular, numeroDaConta, agencia);
 		// TODO Auto-generated constructor stub
 	}
-	//"extends" para reaproveitar código
+	
+	@Override
+		public void sacar(double valor) {
+		saldo -= valor + 2;
+		//"juros" sobrescrever, caso não tenha subscrição utilizara o mesmo da "Conta"
+		}
 	
 	
 }

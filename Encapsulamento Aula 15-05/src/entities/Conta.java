@@ -4,10 +4,10 @@ public class Conta {
 	private String titular;
 	private int numeroDaConta;
 	private int agencia;
-	private double saldo;
-		
+	protected double saldo;
+		//protected para acessar nas  subclasses, mas continuar privado para classes de fora
 	public Conta() {
-		
+		super();
 	}
 	
 	public Conta(String titular, int numeroDaConta, int agencia) {
@@ -60,7 +60,7 @@ public class Conta {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "\nTitular da conta: " + titular + "\nNúmero da conta: " + numeroDaConta + "\nAgência: " + agencia;
+		return "\nTitular da conta: " + titular + "\nNúmero da conta: " + numeroDaConta + "\nAgência: " + agencia + "\nSaldo: " + saldo ;
 	}
 	 	
 }
