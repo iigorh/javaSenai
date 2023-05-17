@@ -6,6 +6,9 @@ public class Conta {
 	private int agencia;
 	private double saldo;
 		
+	public Conta() {
+		
+	}
 	
 	public Conta(String titular, int numeroDaConta, int agencia) {
 		super();
