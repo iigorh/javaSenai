@@ -61,12 +61,13 @@ public class Tv {
 		public void status() {
 			if(ligado == true) {
 				System.out.println("Sua televisão está ligada e você está no canal: " + canal + ", seu volume está em: " + volume + " e sua televisão está ligada!");
+			}else if(ligado == false) {
+				System.out.println("Sua televisão está desligada.");
 			}
-			System.out.println("Sua televisão está desligada");	
+				
 		}
 				
 		
 		
 
 	}
-
