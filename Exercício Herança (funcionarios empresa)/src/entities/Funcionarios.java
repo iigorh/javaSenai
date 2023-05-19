@@ -15,7 +15,7 @@ public class Funcionarios {
 	 * Telefonista trabalha em uma baia numerada que é sua estação de trabalho
 	 * possui salário inicial de R$ 1.500,00
 	 * 
-	 * +bonificação de 10% no salário após a meta batida
+	 * +bonificação de 10% no salário após a meta batida ok
 	 * 
 	 * Salário bruto com bonificação tem desconto de: INSS = 5% IRPF = 8%
 	 * 
@@ -24,16 +24,50 @@ public class Funcionarios {
 	 */
 	
 	private String nome;
-	private double salarioInicial;
+	protected double salarioInicial;
 	private double bonus;
-	private double salarioLiquidos;
+	private double salarioLiquido;
 	
-	public Funcionarios() {
+	
+	public Funcionarios(String nome, double salarioInicial, double bonus, double salarioLiquido) {
+		super();
 		this.nome = nome;
 		this.salarioInicial = salarioInicial;
-		
+		this.bonus = bonus;
+		this.salarioLiquido = salarioLiquido;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public double getSalarioInicial() {
+		return salarioInicial;
+	}
+
+	public double getBonus() {
+		return bonus;
+	}
+
+	public double getSalarioLiquido() {
+		return salarioLiquido;
+	}
+	
+	public double calcularBonus(double bonus){
+			return bonus * 0.10;	
+	}
+	
+	private void bonus() {
+		salarioInicial *= 0.10;
+
+	}
 		
 	}
 	
 	
-}
+

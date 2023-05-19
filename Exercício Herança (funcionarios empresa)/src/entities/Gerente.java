@@ -1,6 +1,7 @@
 package entities;
 
-public class Gerente {
+public class Gerente extends Funcionarios {
+
 	/*
 	 * Na empresa existem, por enquanto, 3 tipos de funcionários para serem
 	 * cadastrados, que são: Gerente, Secretaria, Telefonista.
@@ -22,6 +23,14 @@ public class Gerente {
 	 * Mostre o contracheques de cada um contendo salario base + bonificação,
 	 * descontos dos tributos separados e o salario liquido.
 	 */
-
+	private String usuario;
+	private String senha;
 	
+	public Gerente(String nome, double salarioInicial, double bonus, double salarioLiquido) {
+		super("Jorge", 3000.00, bonus, salarioLiquido);
+		this.usuario = usuario;
+		this.senha = senha;
+	}
+	
+
 }
