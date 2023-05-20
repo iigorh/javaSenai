@@ -1,6 +1,6 @@
 package entities;
 
-public class Telefonista {
+public class Telefonista extends Funcionarios{
 	/*
 	 * Na empresa existem, por enquanto, 3 tipos de funcionários para serem
 	 * cadastrados, que são: Gerente, Secretaria, Telefonista.
@@ -22,6 +22,15 @@ public class Telefonista {
 	 * Mostre o contracheques de cada um contendo salario base + bonificação,
 	 * descontos dos tributos separados e o salario liquido.
 	 */
+	private  int baia;
+
+	public Telefonista(String nome, String cargo, int baia) {
+		super();
+		this.nome = nome;
+		this.cargo = cargo;
+		this.baia = baia;
+	}
+	
 	
 	
 }

@@ -1,6 +1,8 @@
 package entities;
 
-public class Secretaria {
+public class Secretaria extends Funcionarios{
+
+	
 	/*
 	 * Na empresa existem, por enquanto, 3 tipos de funcionários para serem
 	 * cadastrados, que são: Gerente, Secretaria, Telefonista.
@@ -22,4 +24,13 @@ public class Secretaria {
 	 * Mostre o contracheques de cada um contendo salario base + bonificação,
 	 * descontos dos tributos separados e o salario liquido.
 	 */
+	
+	private String telefone;
+	public Secretaria(String nome, String cargo, String telefone) {
+		super();
+		this.nome = nome;
+		this.cargo = cargo;
+		this.telefone = telefone;
+	}
+	
 }

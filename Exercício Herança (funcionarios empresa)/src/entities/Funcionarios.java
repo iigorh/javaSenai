@@ -23,51 +23,48 @@ public class Funcionarios {
 	 * descontos dos tributos separados e o salario liquido.
 	 */
 	
-	private String nome;
+	protected String nome;
 	protected double salarioInicial;
-	private double bonus;
-	private double salarioLiquido;
+	protected String cargo;
 	
 	
-	public Funcionarios(String nome, double salarioInicial, double bonus, double salarioLiquido) {
+	public Funcionarios() {
 		super();
 		this.nome = nome;
-		this.salarioInicial = salarioInicial;
-		this.bonus = bonus;
-		this.salarioLiquido = salarioLiquido;
+		this.cargo = cargo;
+		this.salarioInicial = 1500.00;
 	}
-
-
-	public String getNome() {
-		return nome;
-	}
-
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
-
-	public double getSalarioInicial() {
-		return salarioInicial;
-	}
-
-	public double getBonus() {
-		return bonus;
-	}
-
-	public double getSalarioLiquido() {
-		return salarioLiquido;
-	}
-	
-	public double calcularBonus(double bonus){
-			return bonus * 0.10;	
-	}
-	
-	private void bonus() {
-		salarioInicial *= 0.10;
-
-	}
+	private String salarioInicial() {
 		
+		return null;
 	}
+	public double salarioLiquido() {
+		double salarioBruto = salarioInicial + bonus();
+		double descontoInss = salarioBruto * 0.05;
+		double descontoIrpf = salarioBruto * 0.08;
+		return salarioBruto - descontoInss - descontoIrpf;
+	}
+	public double bonus() {
+		return salarioInicial * 0.1;
+	}
+	
+	public void contraCheque() {
+		
+		System.out.println("******* Contracheque *******");
+		System.out.println("\n");
+        System.out.println("Nome do funcionário: " + nome);
+        System.out.println("Cargo: " + cargo);
+        System.out.println("Salário Inicial: " + salarioInicial);
+        System.out.println("Bonificação: " + bonus());
+        System.out.println("Desconto INSS: " + salarioInicial * 0.05);
+        System.out.println("Desconto IRPF: " + salarioInicial * 0.08);
+        System.out.println("Salário Líquido: " + salarioLiquido());
+        System.out.println("===============================");
+	}
+
+
+	
+}
 	
 	
 

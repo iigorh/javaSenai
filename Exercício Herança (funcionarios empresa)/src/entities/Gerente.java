@@ -26,8 +26,11 @@ public class Gerente extends Funcionarios {
 	private String usuario;
 	private String senha;
 	
-	public Gerente(String nome, double salarioInicial, double bonus, double salarioLiquido) {
-		super("Jorge", 3000.00, bonus, salarioLiquido);
+	public Gerente(String nome, String cargo, String usuario, String senha) {
+		super();
+		this.salarioInicial = 3000.00;
+		this.nome = nome;
+		this.cargo = cargo;
 		this.usuario = usuario;
 		this.senha = senha;
 	}
